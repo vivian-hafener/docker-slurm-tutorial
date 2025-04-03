@@ -27,6 +27,7 @@ services:
     networks:
       network:
         ipv4_address: 172.19.0.2
+    command: sleep 10d
 
   node1:
     <<: *node
@@ -35,6 +36,7 @@ services:
       network:
         ipv4_address: 172.19.0.3
     cpuset: "0"
+    command: sleep 10d
 
   node2:
     <<: *node
@@ -43,4 +45,5 @@ services:
       network:
         ipv4_address: 172.19.0.4
     cpuset: "1"
+    command: sleep 10d
     
